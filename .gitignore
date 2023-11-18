@@ -1,0 +1,6 @@
+BRFSS_2015
+.DS_Store
+gitignore
+diabetes_012_prediabetes_BRFSS2015.csv
+diabetes_binary_5050_DR_BRFSS2015.csv
+diabetes_binary_DR_BRFSS2015.csv
