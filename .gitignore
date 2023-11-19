@@ -4,3 +4,6 @@ gitignore
 diabetes_012_prediabetes_BRFSS2015.csv
 diabetes_binary_5050_DR_BRFSS2015.csv
 diabetes_binary_DR_BRFSS2015.csv
+index-Copy1.ipynb
+old_xgb_model.ipynb
+.ipynb_checkpoints/
