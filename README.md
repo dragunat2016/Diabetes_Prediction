@@ -208,14 +208,17 @@ However, in-spite off the increased accuracies, we chose the Logistical Regressi
 # Recomendations
 
 * The CDC should use the logistical regression model in their application.
-* Create education materials for people to take and monitor their own blood pressure. Blood pressure was one off the top features influencing model prediction on diabetes status.
-* Providers who see people with high cholesterol should also screen for diabetes. High cholesterol was another feature that models gave significant weight in their predictions.
-* Work with policy makers to identify ways to improve the general health and fitness of Americans. General Health was the most correlated feature with diabetes.
+
+* Consider a strategy around educating people to take their blood pressure on a regular basis since it was one of the top features.
+
+* Providers who see people with high cholesterol should also screen for diabetes since high cholesterol was another top feature.
+
+* Continue advocating for policy/strategies that aim to improve the general health and fitness of Americans. Low health was the most correlated feature with diabetes.
 
 
 # Future Projects
 
-* Go through the data sets the BRFSS has produced through the years. Measure the rate of diabetes and other factors to predict the trends across the country of these sicknesses.
+* Evaluate previous BRFSS data sets. Measure the rate of diabetes and other chronic conditions to find their trends across the country.
 * Use the model to create an application on the CDC's website that allows a person to enter their data and get a diabetic risk score.
 * Further investigate a strategy around making it easier for people to take and track their blood pressure. It was found to be the greatest predictor around diabetes.
 
