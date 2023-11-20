@@ -26,7 +26,7 @@ The BRFSS started collecting data in 2014. That year they had collected a signif
 * [Images](/images)
 * [notebooks](/notebooks)
 * [Variables](/Variables)
-* [Neural_Network_Model](/Neural_Network)
+* [Neural Network Model](/Neural_Network)
 * [presentation](/presentation.pdf)
 
 # Repository Structure
@@ -158,11 +158,11 @@ Here is an updated table with the results of the tuned XGB models.
 
 Here is the confusion matrix of the second iteration of tuning.
 
-![XGB_CM_tuned](images/xgb_cm_tuned.png)
+![XGB_CM_tuned](images/XGB_CM_tnd.png)
 
 Here are the weights of the features from the tuned XGB model. There does not seem to be a huge difference in the features compared to the initial XGB model. Though the coefficient for HighBP increased and the rest decreased.
 
-![XGB_tnd_feat](images/xgb_tnd_feat.png)
+![XGB_tnd_feat](images/XGB_tnd_feat.png)
 
 
 ## Neural Networks
@@ -191,13 +191,13 @@ Neural
 
 Here are the results for the neural network depicted by a confusion matrix.
 
-![NN_CM](nn_cm.png)
+![NN_CM](images/nn_cm.png)
 
 # Final Model Evaluation
 
 We have been iteratively improving our models. This line graphs shows that each models is more accurate.
 
-![iter_mdl](iter_mdl_predict.png)
+![iter_mdl](images/iter_mdl_predict.png)
 
 Here is the table summarizing the metrics off all models.
 
