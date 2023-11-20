@@ -33,6 +33,7 @@ The BRFSS started collecting data in 2014. That year they had collected a signif
 
 ```
 ├── index.ipynb
+├── Data_Cleaning-colab.ipynb
 ├── README.md
 ├── presentation.pdf
 ├── .gitignore
@@ -45,11 +46,25 @@ The BRFSS started collecting data in 2014. That year they had collected a signif
 
 # Reproduction Steps
 
-1. Download CSV from this link: https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system
-2. Save CSV to file and run steps from the data cleaning notebook
-3. Run the main notebook to the neural networks page.
-4. Run the neural networks notebook
-5. Continue running the main notebook to the end.
+### Download from Github to Local Machine
+
+1. Download the 2015.CSV from this link: https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system
+2. Save CSV to file and run steps from the data cleaning <a href="notebooks/Data_Cleaning.ipynb">notebook</a>.
+3. Run the main notebook.
+
+### Running on Google Colab
+
+#### If you can run multiple notebooks on same runtime
+1. Run the data cleaning colab <a href="Data_Cleaning-colab.ipynb">notebook</a>. first (Data_Cleaning-Colab).
+2. Assuming, you have the kaggle API key, you should have downloaded the CSV to your colab space and generated the files.
+3. Run the index notebook
+
+#### If you cannot run multiple notebooks on the same runtime
+1. Download github repo to google drive
+2. Mount your google drive too colab.
+3. Open the data_cleaning-colab notebook.
+4. 1. Run the data cleaning colab <a href="Data_Cleaning-colab.ipynb">notebook</a>. first (Data_Cleaning-Colab).
+5. Run the index file
 
 
 # Business Objectives
