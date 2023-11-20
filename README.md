@@ -212,7 +212,7 @@ Here are the results for the neural network depicted by a confusion matrix.
 
 We have been iteratively improving our models. This line graphs shows that each models is more accurate.
 
-![iter_mdl](images/iter_mdl_predict.png)
+![iter_mdl](images/iter_mdl_predict_2.png)
 
 Here is the table summarizing the metrics off all models.
 
