@@ -21,30 +21,6 @@ The Behavioral Risk Factor Surveillance System (BRFSS) is the nation’s premier
 The BRFSS started collecting data in 2014. That year they had collected a significant amount of data across more than 400,000 people relating to health, vaccinations, and chronic conditions. Researchers saw an opportunity to apply machine learning algorithms to make predictions on the data, since it was a feature rich dataset with hundreds-of-thousands of records.
 
 
-# Repository Links
-* [Main Notebook](/index.ipynb)
-* [Images](/images)
-* [notebooks](/notebooks)
-* [Variables](/Variables)
-* [Neural Network Model](/Neural_Network)
-* [presentation](/presentation.pdf)
-
-# Repository Structure
-
-```
-├── index.ipynb
-├── Data_Cleaning-colab.ipynb
-├── README.md
-├── presentation.pdf
-├── notebook.pdf
-├── github.pdf
-├── .gitignore
-├── images
-├── Variables
-├── notebooks
-|   ├── Data_Cleaning.ipynb
-|   └── Neural_Network_Modeling.ipynb
-```
 
 # Reproduction Steps
 
@@ -56,12 +32,10 @@ The BRFSS started collecting data in 2014. That year they had collected a signif
 
 ### Running on Google Colab
 
-#### If you can run multiple notebooks on same runtime
-1. Run the data cleaning colab <a href="Data_Cleaning-colab.ipynb">notebook</a>. first (Data_Cleaning-Colab).
-2. Assuming, you have the kaggle API key, you should have downloaded the CSV to your colab space and generated the files.
-3. Run the index notebook
+#### If you can only run one notebooks on same runtime
+1. Run the colab <a href="colab.ipynb">notebook</a>. first.
 
-#### If you cannot run multiple notebooks on the same runtime
+#### If you are using google drive
 1. Download github repo to google drive
 2. Mount your google drive too colab.
 3. Open the data_cleaning-colab notebook.
@@ -91,19 +65,11 @@ The data on the CDC's page is in an ASCII format and hard too decode with time c
 
 Full Link: https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system
 
-## Limitations
 
-This is survey data where the user responses were segmented into several categories.
-
-So the following limitations apply:
-
-* Survey respondants may not be comfortable revealing sensitive information over the phone even if the response is anonymous.
-* Many respondants who answer "no" for diabetes may actually have diabetes, but were not diagnosed. Note: That there was a significant imbalance of diabetes/pre-diabetes versus those who stated that they do not have the condition.
-* Many variables that are continuous in nature were treated as ordinal in the study such as income and age. These variables were treated as ordinal as part of the models.
 
 # Data Preparation
 
-The steps for data preparation and cleaning were done in this <a href="Data_Cleaning.ipynb">notebook</a> for the sake of simplifying the main notebook.
+The steps for data preparation and were done in this <a href="Data_Cleaning.ipynb">notebook</a> for the sake of simplifying the main notebook.
 
 This is the short version of the data cleaning process. For more detail please click the link above.
 
@@ -222,7 +188,7 @@ Here is the table summarizing the metrics off all models.
 
 However, in-spite off the increased accuracies, we chose the Logistical Regression, our baseline model, as our final model. This model ran significantly faster compared too the others (less than a second vs 6 seconds for the second highest). Also, the Neural Network, the most accurate model, was only 0.2% more accurate than the logistical regression model. This tiny accuracy gain is not worth the significantly higher run time and more complex setup.
 
-# Recomendations
+# Recommendations
 
 * The CDC should use the logistical regression model in their application.
 
@@ -232,12 +198,48 @@ However, in-spite off the increased accuracies, we chose the Logistical Regressi
 
 * Continue advocating for policy/strategies that aim to improve the general health and fitness of Americans. Low health was the most correlated feature with diabetes.
 
+## Limitations
+
+This is survey data where the user responses were segmented into several categories.
+
+So the following limitations apply:
+
+* Survey respondants may not be comfortable revealing sensitive information over the phone even if the response is anonymous.
+* Many respondants who answer "no" for diabetes may actually have diabetes, but were not diagnosed. Note: That there was a significant imbalance of diabetes/pre-diabetes versus those who stated that they do not have the condition.
+* Many variables that are continuous in nature were treated as ordinal in the study such as income and age. These variables were treated as ordinal as part of the models.
+
 
 # Future Projects
 
 * Evaluate previous BRFSS data sets. Measure the rate of diabetes and other chronic conditions to find their trends across the country.
 * Use the model to create an application on the CDC's website that allows a person to enter their data and get a diabetic risk score.
 * Further investigate a strategy around making it easier for people to take and track their blood pressure. It was found to be the greatest predictor around diabetes.
+
+# Repository Links
+* [Main Notebook](/index.ipynb)
+* [Images](/images)
+* [notebooks](/notebooks)
+* [Variables](/Variables)
+* [Neural Network Model](/Neural_Network)
+* [presentation](/presentation.pdf)
+
+# Repository Structure
+
+```
+├── index.ipynb
+├── colab.ipynb
+├── README.md
+├── .gitignore
+├── images
+├── Variables
+├── deliverables
+|   ├── github.pdf
+|   ├── presentation.pdf
+|   └── notebook.pdf
+├── notebooks
+|   ├── Data_Cleaning.ipynb
+|   └── Neural_Network_Modeling.ipynb
+```
 
 
 # Contact Information
