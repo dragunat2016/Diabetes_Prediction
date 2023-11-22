@@ -104,7 +104,7 @@ Multicolinearity was investigate by creating a heatmap
 
 ## Baseline Model
 
-Started with a baseline logistical regression model. There are the results via a confusion matrix and it's feature importance.
+Started with a baseline logistic regression model. There are the results via a confusion matrix and it's feature importance.
 
 
 ![LR Confusion Matrix](images/lr_confusion_matrix.png)
@@ -186,11 +186,11 @@ Here is the table summarizing the metrics off all models.
 
 ![final_tbl_mdls](images/Table_Models.png)
 
-However, in-spite off the increased accuracies, we chose the Logistical Regression, our baseline model, as our final model. This model ran significantly faster compared too the others (less than a second vs 6 seconds for the second highest). Also, the Neural Network, the most accurate model, was only 0.2% more accurate than the logistical regression model. This tiny accuracy gain is not worth the significantly higher run time and more complex setup.
+However, in-spite off the increased accuracies, we chose the Logistic Regression, our baseline model, as our final model. This model ran significantly faster compared too the others (less than a second vs 6 seconds for the second highest). Also, the Neural Network, the most accurate model, was only 0.2% more accurate than the logistic regression model. This tiny accuracy gain is not worth the significantly higher run time and more complex setup.
 
 # Recommendations
 
-* The CDC should use the logistical regression model in their application.
+* The CDC should use the logistic regression model in their application.
 
 * Consider a strategy around educating people to take their blood pressure on a regular basis since it was one of the top features.
 
